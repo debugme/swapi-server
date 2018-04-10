@@ -1,10 +1,10 @@
 import logger from './logger'
 
 const handle = (process, type) => (error) => {
-  const { env: { IP, PORT } } = process
+  const { env: { IP, PORT, NODE_ENV } } = process
   const [level, message] = error
     ? ['error', error.toString()]
-    : ['info', `server running on ${IP}:${PORT}`]
+    : ['info', `[${NODE_ENV}] server running on ${IP}:${PORT}`]
   logger[level](message)
 }
 

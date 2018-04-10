@@ -1,6 +1,6 @@
 {
   "name": "swapi-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Star Wars API REST Server",
   "engines": {
     "node": "8.10.0",
